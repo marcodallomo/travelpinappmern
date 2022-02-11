@@ -28,6 +28,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "/frontend/build", "index.html"));
 });
 
-app.listen(process.env.PORT || 8800, () => {
+app.listen(process.env.PORT, () => {
   console.log("backend server is running");
 });
